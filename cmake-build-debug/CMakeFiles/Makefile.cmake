@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.cpp.dir/DependInfo.cmake"
-  "CMakeFiles/BezierCurves.dir/DependInfo.cmake"
+  "CMakeFiles/Bezier-Drawing.dir/DependInfo.cmake"
   )

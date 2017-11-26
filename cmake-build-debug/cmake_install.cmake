@@ -1,4 +1,4 @@
-# Install script for directory: /home/anikethjr/Graphics/BezierCurves
+# Install script for directory: /home/anikethjr/Graphics/Bezier-Drawing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anikethjr/Graphics/BezierCurves/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anikethjr/Graphics/Bezier-Drawing/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

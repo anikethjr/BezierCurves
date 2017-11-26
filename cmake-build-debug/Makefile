@@ -48,10 +48,10 @@ RM = /home/anikethjr/clion-2017.2.2/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anikethjr/Graphics/BezierCurves
+CMAKE_SOURCE_DIR = /home/anikethjr/Graphics/Bezier-Drawing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anikethjr/Graphics/BezierCurves/cmake-build-debug
+CMAKE_BINARY_DIR = /home/anikethjr/Graphics/Bezier-Drawing/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anikethjr/Graphics/BezierCurves/cmake-build-debug/CMakeFiles /home/anikethjr/Graphics/BezierCurves/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anikethjr/Graphics/Bezier-Drawing/cmake-build-debug/CMakeFiles /home/anikethjr/Graphics/Bezier-Drawing/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anikethjr/Graphics/BezierCurves/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anikethjr/Graphics/Bezier-Drawing/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,47 +124,77 @@ main.cpp/fast:
 .PHONY : main.cpp/fast
 
 #=============================================================================
-# Target rules for targets named BezierCurves
+# Target rules for targets named Bezier-Drawing
 
 # Build rule for target.
-BezierCurves: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BezierCurves
-.PHONY : BezierCurves
+Bezier-Drawing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Bezier-Drawing
+.PHONY : Bezier-Drawing
 
 # fast build rule for target.
-BezierCurves/fast:
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/build
-.PHONY : BezierCurves/fast
+Bezier-Drawing/fast:
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/build
+.PHONY : Bezier-Drawing/fast
 
-bezier1.o: bezier1.cpp.o
+BezierDrawer.o: BezierDrawer.cpp.o
 
-.PHONY : bezier1.o
+.PHONY : BezierDrawer.o
 
 # target to build an object file
-bezier1.cpp.o:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/bezier1.cpp.o
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/bezier1.cpp.o
-.PHONY : bezier1.cpp.o
+BezierDrawer.cpp.o:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/BezierDrawer.cpp.o
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/BezierDrawer.cpp.o
+.PHONY : BezierDrawer.cpp.o
 
-bezier1.i: bezier1.cpp.i
+BezierDrawer.i: BezierDrawer.cpp.i
 
-.PHONY : bezier1.i
+.PHONY : BezierDrawer.i
 
 # target to preprocess a source file
-bezier1.cpp.i:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/bezier1.cpp.i
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/bezier1.cpp.i
-.PHONY : bezier1.cpp.i
+BezierDrawer.cpp.i:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/BezierDrawer.cpp.i
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/BezierDrawer.cpp.i
+.PHONY : BezierDrawer.cpp.i
 
-bezier1.s: bezier1.cpp.s
+BezierDrawer.s: BezierDrawer.cpp.s
 
-.PHONY : bezier1.s
+.PHONY : BezierDrawer.s
 
 # target to generate assembly for a file
-bezier1.cpp.s:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/bezier1.cpp.s
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/bezier1.cpp.s
-.PHONY : bezier1.cpp.s
+BezierDrawer.cpp.s:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/BezierDrawer.cpp.s
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/BezierDrawer.cpp.s
+.PHONY : BezierDrawer.cpp.s
+
+Camera.o: Camera.cpp.o
+
+.PHONY : Camera.o
+
+# target to build an object file
+Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/Camera.cpp.o
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/Camera.cpp.o
+.PHONY : Camera.cpp.o
+
+Camera.i: Camera.cpp.i
+
+.PHONY : Camera.i
+
+# target to preprocess a source file
+Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/Camera.cpp.i
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/Camera.cpp.i
+.PHONY : Camera.cpp.i
+
+Camera.s: Camera.cpp.s
+
+.PHONY : Camera.s
+
+# target to generate assembly for a file
+Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/Camera.cpp.s
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/Camera.cpp.s
+.PHONY : Camera.cpp.s
 
 main.o: main.cpp.o
 
@@ -173,7 +203,7 @@ main.o: main.cpp.o
 # target to build an object file
 main.cpp.o:
 	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -183,7 +213,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -193,7 +223,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/BezierCurves.dir/build.make CMakeFiles/BezierCurves.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Bezier-Drawing.dir/build.make CMakeFiles/Bezier-Drawing.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -205,10 +235,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main.cpp"
-	@echo "... BezierCurves"
-	@echo "... bezier1.o"
-	@echo "... bezier1.i"
-	@echo "... bezier1.s"
+	@echo "... Bezier-Drawing"
+	@echo "... BezierDrawer.o"
+	@echo "... BezierDrawer.i"
+	@echo "... BezierDrawer.s"
+	@echo "... Camera.o"
+	@echo "... Camera.i"
+	@echo "... Camera.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
